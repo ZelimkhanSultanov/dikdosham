@@ -15,8 +15,8 @@
 ## Сайт
 https://ps95.ru/dikdosham/ru/
 
-## Начальная страница
+### Начальная страница
 ![alt text](screenshots/scr_dikdosham.png "Начальная страница")
 
-## Страница с переводом слова
+### Страница с переводом слова
 ![alt text](screenshots/scr_dikdosham2.png "Страница с переводом слова")
