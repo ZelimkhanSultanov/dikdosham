@@ -1,0 +1,374 @@
+/*Мини версия*/
+#dosh_block_mini {
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	cursor: pointer;
+}
+#dosh_block_mini #word_mini {
+/*	font-family: Verdana;
+	padding: 5px 5px;
+	border: 2px solid #157D1D;
+	border-radius: 5px;*/
+	width: 93.6%;
+	cursor: pointer;
+	/*font-size: 12pt;*/
+}
+#dosh_block_mini #enter_icon_mini {
+	display: inline-block;
+	margin-left: -40px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+#dosh_block_mini #error_translate_mini {
+	display: none;
+	margin-top: 5px;
+	width: 94.5%;
+	font-size: 10pt;
+	background-color: rgba(255, 0, 51, 0.8);
+	border-radius: 3px;
+	color: #fff;
+	padding: 5px;
+}
+#dosh_block_mini #word_mini:focus, #dosh_block_mini #translate_btn:focus {
+	outline: none;
+}
+#dosh_block_mini #result_mini {
+	width: 93.6%;
+	color: #2A4142;;
+	/*border-radius: 5px;*/
+	/*display: none;*/
+	margin-top: 20px;
+	padding: 15px 5px;
+	background-color: #FFFDC5;
+	box-shadow: 0 0 5px #DAD6D6;
+}
+
+#dosh_block_mini #result_mini p.opis_mini {
+	margin-top:0; 
+	padding-top: 0;
+}
+#dosh_block_mini #result_mini ol {
+	/*margin-top: -15px;*/
+	padding-top: 0;
+}
+#dosh_block_mini #result_mini ol li {
+	list-style-type: decimal;
+	margin-bottom: 5px;
+	margin-left: 15px;
+}
+#dosh_block_mini #result_mini .dict_header {
+	font-size: 13pt;
+	color: #01A1F1;
+	margin-bottom: 10px;
+}
+#dosh_block_mini #result_mini .dict_header:nth-child(1) {
+	margin-top: 0;
+}
+#dosh_block_mini #result_mini .slovo {
+	font-weight: bold;
+	font-size: 12pt;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+#dosh_block_mini #result_mini .slovo:hover {
+	color: #32A2A7;
+}
+#dosh_block_mini #result_mini .perevod {
+	/*font-family: Arial;*/
+	font-size: 11pt;
+	padding-left: 20px;
+	display: none;
+	margin-bottom: 10px;
+}
+/* /Мини версия*/
+
+#dosh_block_bg {
+	position: absolute;
+	z-index: 120000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	display: none;
+}
+#dosh_block0 {
+	display: none;
+	box-shadow: 0 0 30px #666;
+	width: 80%;
+	max-width: 1500px;
+	min-width: 500px;
+	height: 80%;
+	min-height: 500px;
+	position: absolute;
+	padding: 20px 0;
+	z-index: 121000;
+	background-color: #fff;
+	background-image: url(/dikdosham/images/background.png);
+	background-position: top left;
+	background-repeat: repeat;
+}
+#dosh_block0 #close_dosham {
+	position: absolute;
+	font-size: 11pt;
+	right: 5px;
+	top: 3px;
+	cursor: pointer;
+	text-decoration: underline;
+	color: #666;
+}
+#dosh_block {
+	height: 100%;
+	width: 80%;
+	max-width: 1000px;
+	min-width: 500px;
+	margin: 0 auto 0;	
+}
+#dosh_block header {
+	margin-bottom: 20px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+#dosh_block #logo {
+	float: left;
+	width: 128px;
+	height: 83px;
+	margin-bottom: -100px;
+	display: inline-block;
+	background-image: url(/dikdosham/images/logo.png);
+	background-position: top left;
+}
+#dosh_block header h1 {
+	font-size: 20pt;
+	font-weight: normal;
+	/*font-family: Trebuchet MS;*/
+	margin: 0;
+	padding-top: 5px;
+	margin-left: 138px;
+}
+#dosh_block header h1 #dosham {
+	color: #157D1D;
+	font-size: 26pt;
+	font-weight: bold;
+}
+#dosh_block header h1 #dosham a {
+	text-decoration: none;
+	color: #157D1D;
+}
+#dosh_block #dosh_form {
+	margin-bottom: 3px;
+	clear: both;
+}
+#dosh_block #word {
+	/*font-family: Verdana;*/
+	padding: 5px 5px;
+	border: 2px solid #157D1D;
+	border-radius: 5px;
+	width: 77.9%;
+	/*min-width: 487px;*/
+	font-size: 12pt;
+}
+#dosh_block #enter_icon {
+	display: inline-block;
+	margin-left: -40px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+#dosh_block #error_translate, #dosh_block #error_no_word {
+	display: none;
+	font-size: 11pt;
+	background-color: rgba(255, 0, 51, 0.8);
+	border-radius: 3px;
+	color: #fff;
+	padding: 5px;
+}
+#dosh_block #word:focus, #dosh_block #translate_btn:focus {
+	outline: none;
+}
+#dosh_block #translate_btn {
+	box-shadow: 0 0 2px #000;
+	/*font-family: Arial;*/
+	font-size: 14pt;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #157D1D;
+	color: #fff;
+	/*width: 20%;
+	min-width: 200px;*/
+}
+#dosh_block #translate_btn:hover,#dosh_block #translate_btn:focus {
+	cursor: pointer;
+	box-shadow: 0 0 5px #000;
+}
+#dosh_block #translate_btn:active {
+	box-shadow: 0 0 2px #000;
+}
+#dosh_block #dosham_info {
+	font-size: 12pt;
+	color: #2A4142;
+	/*min-height: 300px;*/
+	overflow-y: auto; 
+	/*border-radius: 5px;*/
+	/*display: none;*/
+	margin-top: 20px;
+	padding: 15px 5px;
+	background-color: #FFFDC5;
+	box-shadow: 0 0 5px #DAD6D6;	
+}
+#dosh_block #dosham_info h1{
+	font-size: 16pt;
+	margin-top: 0;
+}
+#dosh_block #dosham_info p.opis {
+	margin-top:0; 
+	padding-top: 0;
+	font-size: 12pt;
+}
+#dosh_block #dosham_info ol {
+	padding-top: 0;
+	font-size: 12pt;
+}
+#dosh_block #dosham_info ol li {
+	list-style-type: decimal;
+	margin-bottom: 5px;
+	margin-left: 15px;
+}
+#result {
+	font-size: 12pt;
+	color: #2A4142;
+	/*min-height: 300px;*/
+	overflow-y: auto; 
+	/*border-radius: 5px;*/
+	display: none;
+	margin-top: 20px;
+	padding: 15px 5px;
+	background-color: #FFFDC5;
+	box-shadow: 0 0 5px #DAD6D6;
+}
+#result .dict_header {
+	font-size: 16pt;
+	color: #01A1F1;
+	margin-bottom: 10px;
+}
+#result .dict_header:nth-child(1) {
+	margin-top: 0;
+}
+#result .slovo {
+	font-weight: bold;
+	font-size: 14pt;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+#result .slovo:hover {
+	color: #32A2A7;
+}
+#result .perevod {
+	/*font-family: Arial;*/
+	font-size: 12pt;
+	padding-left: 20px;
+	display: none;
+	margin-bottom: 10px;
+}
+
+/*   TABLET  : 768px -----------------------------   */
+@media only screen and (max-width: 985px) and (min-width: 768px){
+	#dosh_block {
+    	width: 100%;
+    	margin: 0;
+    }
+    #dosh_block #logo {
+    	width: 110px;
+    	height: 71px;
+    	background-image: url(../images/logo-110-71.png);
+	}
+	#dosh_block header h1 {
+    	font-size: 18pt;
+    	margin-left: 120px;
+	}
+	#dosh_block header h1 #dosham {
+    	font-size: 24pt;
+	}
+	#result .dict_header {
+    	font-size: 14pt;
+	}
+	#result .slovo {
+    font-size: 12pt;
+	}
+	#result .perevod {
+    font-size: 11pt;
+	}
+	#dosh_block #dosham_info h1 {
+    	font-size: 14pt;
+	}
+	#dosh_block #dosham_info p.opis, #dosh_block #dosham_info ol {
+    	font-size: 11pt;
+	}
+}
+
+/*   Phone  : 480px -----------------------------   */ 
+@media only screen and (max-width: 767px) and (min-width: 480px){
+	#dosh_block {
+    	width: 100%;
+    	margin: 0;
+    }
+    #dosh_block #logo {
+    	width: 110px;
+    	height: 71px;
+    	background-image: url(../images/logo-110-71.png);
+	}
+	#dosh_block header h1 {
+    	font-size: 16pt;
+    	margin-left: 120px;
+	}
+	#dosh_block header h1 #dosham {
+    	font-size: 20pt;
+	}
+	#dosh_block #dosham_info h1 {
+    	font-size: 12pt;
+	}
+	#dosh_block #dosham_info p.opis, #dosh_block #dosham_info ol {
+    	font-size: 11pt;
+	}
+	#result {
+		overflow: hidden;
+		max-height: 100%;
+	}
+
+}
+
+/*   Phone  : 320px -----------------------------   */
+@media only screen and (max-width: 479px){
+	#dosh_block {
+    	width: 100%;
+    	min-width: 320px;
+    	margin: 0;
+    }
+    #dosh_block #logo {
+    	width: 110px;
+    	height: 71px;
+    	background-image: url(../images/logo-110-71.png);
+	}
+	#dosh_block header h1 {
+    	font-size: 14pt;
+    	margin-left: 120px;
+	}
+	#dosh_block header h1 #dosham {
+    	font-size: 20pt;
+	}
+	#dosh_block #word {
+	width: 90.6%;
+	min-width: 307px;
+	font-size: 11pt;
+	}
+	#dosh_block #dosham_info h1 {
+    	font-size: 12pt;
+	}
+	#dosh_block #dosham_info p.opis, #dosh_block #dosham_info ol {
+    	font-size: 11pt;
+	}
+	#result {
+		overflow: hidden;
+		max-height: 100%;
+	}
+
+}
